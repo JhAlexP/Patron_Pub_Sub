@@ -73,7 +73,7 @@ ________________________________________
 ## Architecture Diagram
 
 Replace the image path below with your actual diagram file.
-![Logical Architecture Diagram](docs/images/logical-architecture.png)
+![Logical Architecture Diagram]([docs/images/logical-architecture.png](https://github.com/JhalexR/Patron_Pub_Sub/blob/main/Diagrama%20Observer%20Logico.png))
 
 ### Architecture Components
 -	**Publisher** – Emits domain events (e.g., NewLabResultGenerated)
