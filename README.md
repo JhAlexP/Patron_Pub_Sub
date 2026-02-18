@@ -14,25 +14,25 @@ ________________________________________
 
 
 A healthcare company manages:
-•	Laboratory Results Service
-•	Appointment Scheduling Service
-•	Electronic Medical Records Service
+-	Laboratory Results Service
+-	Appointment Scheduling Service
+-	Electronic Medical Records Service
 
 These systems operate independently without standardized communication.
 
 ### Identified Issues
-•	❌ Data inconsistencies
-•	❌ Duplicate records
-•	❌ Delayed clinical updates
-•	❌ Lack of synchronization between services
-•	❌ Risk to patient data confidentiality
+-	❌ Data inconsistencies
+-	❌ Duplicate records
+-	❌ Delayed clinical updates
+-	❌ Lack of synchronization between services
+-	❌ Risk to patient data confidentiality
 
 ### Example Scenario
 
 When a laboratory result is generated:
-•	The medical history is not updated immediately.
-•	The appointment scheduling system is not synchronized.
-•	Doctors and patients experience delays accessing clinical information.
+-	The medical history is not updated immediately.
+-	The appointment scheduling system is not synchronized.
+-	Doctors and patients experience delays accessing clinical information.
 
 ________________________________________
 
@@ -43,20 +43,20 @@ ________________________________________
 Implement a service-based architectural pattern to solve interoperability issues in electronic health record management.
 
 ## Specific Objectives
-•	Standardize medical information exchange.
-•	Improve efficiency in medical data sharing.
-•	Eliminate inconsistencies and duplication.
-•	Enable asynchronous communication between services.
+-	Standardize medical information exchange.
+-	Improve efficiency in medical data sharing.
+-	Eliminate inconsistencies and duplication.
+-	Enable asynchronous communication between services.
 ________________________________________
 
 # 🧩 Selected Pattern: Publisher–Subscriber (Pub/Sub)
 
 ### The Publisher–Subscriber (Pub/Sub) pattern is a messaging architecture pattern that:
 
-•	Decouples message producers (publishers) from message consumers (subscribers).
-•	Uses a message broker as an intermediary.
-•	Enables asynchronous communication.
-•	Supports scalability and flexibility.
+-	Decouples message producers (publishers) from message consumers (subscribers).
+-	Uses a message broker as an intermediary.
+-	Enables asynchronous communication.
+-	Supports scalability and flexibility.
 
 ### Core Concept
 
@@ -76,12 +76,12 @@ Replace the image path below with your actual diagram file.
 ![Logical Architecture Diagram](docs/images/logical-architecture.png)
 
 ### Architecture Components
-•	**Publisher** – Emits domain events (e.g., NewLabResultGenerated)
-•	**Message Broker** – Routes and distributes events
-•	**Subscribers** – Services reacting to events:
-o	Medical History Service
-o	Appointment Scheduling Service
-o	Notification Service
+-	**Publisher** – Emits domain events (e.g., NewLabResultGenerated)
+-	**Message Broker** – Routes and distributes events
+-	**Subscribers** – Services reacting to events:
+-	Medical History Service
+-	Appointment Scheduling Service
+-	Notification Service
 
 ________________________________________
 
@@ -96,28 +96,28 @@ ________________________________________
 3.	The Publisher emits an event.
 4.	The Broker distributes the event.
 5.	Each Subscriber reacts independently:
-o	Update records
-o	Schedule appointments
-o	Notify doctor
-o	Alert patient
-o	Log event
+-	Update records
+-	Schedule appointments
+-	Notify doctor
+-	Alert patient
+-	Log event
 
 ________________________________________
 
 # 🏥 Application in the Healthcare Scenario
 
 ### When a clinical laboratory result is generated:
-•	The system publishes the event NewLabResultGenerated.
-•	The broker distributes it to:
-o	Medical History Service
-o	Appointment Scheduling Service
-o	Notification Service
+-	The system publishes the event NewLabResultGenerated.
+-	The broker distributes it to:
+-	Medical History Service
+-	Appointment Scheduling Service
+-	Notification Service
 
 ### Results Achieved
-✔ Near real-time synchronization
-✔ Elimination of data duplication
-✔ Faster access to clinical information
-✔ Improved patient and doctor experience
+- Near real-time synchronization
+- Elimination of data duplication
+- Faster access to clinical information
+- Improved patient and doctor experience
 
 ________________________________________
 
@@ -125,17 +125,17 @@ ________________________________________
 
 ## Event-Driven Architecture (EDA)
 This solution aligns with Event-Driven Architecture principles:
-•	Systems react to domain events.
-•	Events are immutable.
-•	Communication is asynchronous.
-•	Services do not directly depend on each other.
+-	Systems react to domain events.
+-	Events are immutable.
+-	Communication is asynchronous.
+-	Services do not directly depend on each other.
 
 ### Example Event
 Event: NewLabResultGenerated
 **Reactions:**
-•	Update medical history
-•	Notify doctor
-•	Send alert to patient
+-	Update medical history
+-	Notify doctor
+-	Send alert to patient
 
 ________________________________________
 
@@ -152,38 +152,38 @@ ________________________________________
 
 # ⚙️ Key Architectural Principles
 
-•	**Logical and Temporal Decoupling**
-•	**Asynchronous Communication**
-•	**Event-Oriented Modeling**
-•	**Controlled Fan-out**
-•	**Broker-based Intermediation**
+-	**Logical and Temporal Decoupling**
+-	**Asynchronous Communication**
+-	**Event-Oriented Modeling**
+-	**Controlled Fan-out**
+-	**Broker-based Intermediation**
 
 ________________________________________
 
 # ✅ Advantages
 
-•	Independent service evolution
-•	Easy addition of new subscribers
-•	Ideal for multi-system reactions to the same event
-•	Scalable and extensible
-•	Near real-time propagation
+-	Independent service evolution
+-	Easy addition of new subscribers
+-	Ideal for multi-system reactions to the same event
+-	Scalable and extensible
+-	Near real-time propagation
 
 ________________________________________
 
 # ⚠️ Disadvantages
 
-•	Harder event tracing
-•	Potential overload without scaling strategy
-•	Debugging can be more complex
+-	Harder event tracing
+-	Potential overload without scaling strategy
+-	Debugging can be more complex
 
 ________________________________________
 
 # 🛠 Implementation
 
 The implementation simulates:
-•	Event publication (Lab Result Service)
-•	Event distribution (Broker)
-•	Multiple asynchronous subscribers
+-	Event publication (Lab Result Service)
+-	Event distribution (Broker)
+-	Multiple asynchronous subscribers
 
 🔗 Repository:
 https://github.com/JhAlexP/Patron_Pub_Sub
@@ -191,18 +191,18 @@ https://github.com/JhAlexP/Patron_Pub_Sub
 ________________________________________
 
 # 📚 References
-•	Amazon Web Services – Event-Driven Architecture
-•	Microsoft Learn – CQRS Pattern
-•	Microsoft Learn – Saga Pattern
-•	AWS Prescriptive Guidance – Saga Pattern
-•	Healthcare interoperability resources (HL7 FHIR Colombia)
-•	Microservices Architecture Patterns (API Gateway, Service Discovery)
+-	Amazon Web Services – Event-Driven Architecture
+-	Microsoft Learn – CQRS Pattern
+-	Microsoft Learn – Saga Pattern
+-	AWS Prescriptive Guidance – Saga Pattern
+-	Healthcare interoperability resources (HL7 FHIR Colombia)
+-	Microservices Architecture Patterns (API Gateway, Service Discovery)
 
 ________________________________________
 
 #👨‍🎓 Author
-**John Alexander Peñaloza Rojas**
-**Software Engineering**
-**Politécnico Grancolombiano University**
-**2025**
+- **John Alexander Peñaloza Rojas**
+- **Software Engineering**
+- **Politécnico Grancolombiano University**
+- **2025**
 
