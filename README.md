@@ -1,6 +1,6 @@
-#🏥 Healthcare Interoperability Solution using the Pub/Sub Pattern
+# 🏥 Healthcare Interoperability Solution using the Pub/Sub Pattern
 
-##📖 Overview
+## 📖 Overview
 
 This project was developed for the **Software Architecture** course (2025) as a practical implementation of the **Publisher–Subscriber (Pub/Sub)** architectural pattern.
 
@@ -10,7 +10,7 @@ The solution applies the Pub/Sub pattern within a Service-Oriented Architecture 
 
 ________________________________________
 
-#🚨 Problem Statement
+# 🚨 Problem Statement
 
 
 A healthcare company manages:
@@ -36,7 +36,7 @@ When a laboratory result is generated:
 
 ________________________________________
 
-#🎯 Objectives
+# 🎯 Objectives
 
 ## General Objective
 
@@ -49,7 +49,7 @@ Implement a service-based architectural pattern to solve interoperability issues
 •	Enable asynchronous communication between services.
 ________________________________________
 
-#🧩 Selected Pattern: Publisher–Subscriber (Pub/Sub)
+# 🧩 Selected Pattern: Publisher–Subscriber (Pub/Sub)
 
 ### The Publisher–Subscriber (Pub/Sub) pattern is a messaging architecture pattern that:
 
@@ -85,7 +85,7 @@ o	Notification Service
 
 ________________________________________
 
-#🔄 Interaction Flow
+# 🔄 Interaction Flow
 
 ## Interaction Flow Diagram
 ![Interaction Flow Diagram](docs/images/interaction-flow.png)
@@ -104,7 +104,7 @@ o	Log event
 
 ________________________________________
 
-#🏥 Application in the Healthcare Scenario
+# 🏥 Application in the Healthcare Scenario
 
 ### When a clinical laboratory result is generated:
 •	The system publishes the event NewLabResultGenerated.
@@ -121,7 +121,7 @@ o	Notification Service
 
 ________________________________________
 
-#🌍 Architectural Context
+# 🌍 Architectural Context
 
 ## Event-Driven Architecture (EDA)
 This solution aligns with Event-Driven Architecture principles:
@@ -139,7 +139,7 @@ Event: NewLabResultGenerated
 
 ________________________________________
 
-#🔗 Related Concepts
+# 🔗 Related Concepts
 
 This project connects three architectural concepts:
 
@@ -150,7 +150,7 @@ Observer Pattern	            Object-level design pattern modeling subscription b
 
 ________________________________________
 
-#⚙️ Key Architectural Principles
+# ⚙️ Key Architectural Principles
 
 •	**Logical and Temporal Decoupling**
 •	**Asynchronous Communication**
@@ -170,7 +170,7 @@ ________________________________________
 
 ________________________________________
 
-#⚠️ Disadvantages
+# ⚠️ Disadvantages
 
 •	Harder event tracing
 •	Potential overload without scaling strategy
@@ -190,7 +190,7 @@ https://github.com/JhAlexP/Patron_Pub_Sub
 
 ________________________________________
 
-#📚 References
+# 📚 References
 •	Amazon Web Services – Event-Driven Architecture
 •	Microsoft Learn – CQRS Pattern
 •	Microsoft Learn – Saga Pattern
