@@ -71,8 +71,6 @@ ________________________________________
 # 🏗 Logical Architecture
 
 ## Architecture Diagram
-
-Replace the image path below with your actual diagram file.
 <img width="610" height="460" alt="Diagrama Observer Logico" src="https://github.com/user-attachments/assets/4173bd0f-32b5-42c1-a931-9081fe60e132" />
 
 ### Architecture Components
@@ -88,7 +86,7 @@ ________________________________________
 # 🔄 Interaction Flow
 
 ## Interaction Flow Diagram
-![Interaction Flow Diagram](docs/images/interaction-flow.png)
+<img width="565" height="402" alt="Diagrama flujo interacción" src="https://github.com/user-attachments/assets/bdc8c386-34e0-44ce-b2e0-fa15f9c17365" />
 
 ### Behavioral Cycle
 1.	Subscribers register interest in specific events.
@@ -118,6 +116,8 @@ ________________________________________
 - Elimination of data duplication
 - Faster access to clinical information
 - Improved patient and doctor experience
+
+<img width="990" height="455" alt="Publicador-suscriptor" src="https://github.com/user-attachments/assets/4ae9c9e2-1147-48ea-96f8-47c78693f7fc" />
 
 ________________________________________
 
