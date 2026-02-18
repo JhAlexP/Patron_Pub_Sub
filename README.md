@@ -34,6 +34,9 @@ When a laboratory result is generated:
 -	The appointment scheduling system is not synchronized.
 -	Doctors and patients experience delays accessing clinical information.
 
+
+<img width="685" height="382" alt="Diagrama Problematica" src="https://github.com/user-attachments/assets/36d8e806-ff25-40c2-a6b4-8c526dd23633" />
+
 ________________________________________
 
 # 🎯 Objectives
