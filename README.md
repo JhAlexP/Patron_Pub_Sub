@@ -35,7 +35,7 @@ When a laboratory result is generated:
 -	Doctors and patients experience delays accessing clinical information.
 
 
-![Diagrama problematica](Patron_Pub_Sub\Resources\Problematica 2.png)
+![Diagrama problematica](https://github.com/JhAlexP/Patron_Pub_Sub/blob/main/Resources/Problematica%202.png)
 
 
 ________________________________________
