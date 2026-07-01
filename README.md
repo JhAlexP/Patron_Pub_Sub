@@ -75,7 +75,7 @@ ________________________________________
 # 🏗 Logical Architecture
 
 ### Architecture Diagram Example
-<img width="610" height="460" alt="Diagrama Observer Logico" src="https://github.com/user-attachments/assets/4173bd0f-32b5-42c1-a931-9081fe60e132" />
+![Diagrama Obsever Logico](https://github.com/JhAlexP/Patron_Pub_Sub/blob/main/Resources/Diagrama%20Observer%20Logico.png)
 
 ### Architecture Components
 -	**Publisher** – Emits domain events (e.g., NewLabResultGenerated)
@@ -90,7 +90,7 @@ ________________________________________
 # 🔄 Interaction Flow
 
 ### Interaction Flow Diagram Example
-<img width="565" height="402" alt="Diagrama flujo interacción" src="https://github.com/user-attachments/assets/bdc8c386-34e0-44ce-b2e0-fa15f9c17365" />
+![Diagrama Flujo de interaccion](https://github.com/JhAlexP/Patron_Pub_Sub/blob/main/Resources/Diagrama%20flujo%20interacci%C3%B3n.png)
 
 ### Behavioral Cycle
 1.	Subscribers register interest in specific events.
@@ -122,7 +122,7 @@ ________________________________________
 - Improved patient and doctor experience
 
 ### Diagram Application in the Healthcare Scenario
-<img width="990" height="455" alt="Publicador-suscriptor" src="https://github.com/user-attachments/assets/4ae9c9e2-1147-48ea-96f8-47c78693f7fc" />
+![Diagrama Publicador suscriptor](https://github.com/JhAlexP/Patron_Pub_Sub/blob/main/Resources/Publicador-suscriptor.png)
 
 ________________________________________
 
